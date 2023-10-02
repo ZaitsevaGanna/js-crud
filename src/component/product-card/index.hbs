@@ -1,0 +1,14 @@
+<ul class="user_list">
+    {{#each list}}
+    <li class="form ">
+        <p>Дата створення: {{createDate}} </p>
+        <h2 class="form_title">{{name}}</h2>
+        <p class="form_label">{{description}}</p>
+        <p>ID: {{id}}</p>
+        <div class="form_double_field">
+            <div class="form_title break">{{price}} грн</div>
+            <a href="/product-edit?id={{id}}">Редагувати</a>
+        </div>
+    </li>
+    {{/each}}
+</ul>

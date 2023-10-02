@@ -2,4 +2,10 @@
 @forward "./space.scss";
 
 @use "./var.scss";
-@forward "./var.scss"
+@forward "./var.scss";
+
+@use "./button.scss";
+@forward "./button.scss";
+
+@use "./form.scss";
+@forward "./form.scss"

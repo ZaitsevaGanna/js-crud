@@ -1,0 +1,10 @@
+@use "../../lib/service.scss" as s;
+
+.form{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form_button{
+    width: 20%;
+    text-align: center;
+}

@@ -53,4 +53,27 @@
   opacity: 0.3;
 }
 
-/*# sourceMappingURL=service.css.map */
+h1 {
+  color: #4b50ee;
+  padding-left: 16px;
+  margin-bottom: 32px;
+}
+
+p {
+  font-size: 12px;
+  color: #cccbcb;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.user_list li {
+  padding-left: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/*# sourceMappingURL=style.css.map */

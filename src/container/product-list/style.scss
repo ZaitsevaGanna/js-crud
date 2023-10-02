@@ -1,0 +1,21 @@
+@use "../../lib/service.scss" as s;
+@use"../product-create/style.scss";
+
+.user_list{
+        display: flex;
+flex-direction: row;
+
+flex-wrap: wrap;
+
+}
+li{
+    width: 29%;
+    min-width: 170px;
+}
+p,.break{
+    word-break: break-all;
+}
+.form_double_field{
+    display: flex;
+    justify-content: space-between;
+}

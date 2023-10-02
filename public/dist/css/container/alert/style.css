@@ -53,4 +53,14 @@
   opacity: 0.3;
 }
 
-/*# sourceMappingURL=service.css.map */
+.form {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form_button {
+  width: 20%;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
