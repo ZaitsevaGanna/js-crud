@@ -2,9 +2,11 @@ $colorMap:(
     white:#fff,
     light: #ddd,
     primary: #4b50ee,
-    darkgrey:#7b7979,
+    darkgrey:#9b9999,
     lightgrey:#cccbcb,
-    danger:red
+    danger:red,
+      success:green,
+      black:black
 );
 
 @function color ($key){

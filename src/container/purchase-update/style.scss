@@ -1,0 +1,46 @@
+@use "../../lib/service.scss" as s;
+@use"../../component/divider/style.scss" as divider;
+@use "../../component/field/style.scss" as field;
+@use "../../component/purchase-product/style.scss" ;
+
+
+
+h1 {
+    color: s.color(primary);
+    padding-left: s.space(4);
+   margin-bottom: s.space(8);
+}
+
+.cart_item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart{
+    display: grid;
+    gap: s.space(4);
+    margin:s.space(4) ;
+}
+
+.form_double_field,.form_field{
+    margin: s.space(2);
+}
+.form_field{
+    margin-bottom: 0;
+}
+p{
+    font-size: 12px;
+    color:s.color(lightgrey);
+margin-left: s.space(2);
+}
+.form_title,.form_button{
+   margin-left: s.space(3);
+     margin-right: s.space(3);
+}
+.width98{
+    width: 98%;
+}
+.field_disabled{
+  
+    display: none;
+}

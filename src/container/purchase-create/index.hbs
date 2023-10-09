@@ -1,0 +1,49 @@
+<main class="form">
+    {{#with data}}
+    <form method="POST" action="/purchase-submit?id={{id}}">
+        {{>heading title = "Ваше замовлення"}}
+        <ul class="cart">
+            {{#each cart}}
+            <li class="cart_item ">
+                <span>{{text}}</span>
+                <span class="form_title">{{price}} грн </span>
+            </li>
+            {{/each}}
+        </ul>
+
+
+
+
+
+        {{>heading title = "Оформлення замовлення"}}
+        <div class="form_double_field">
+            {{> field label="Ім'я" name ="lastname"}}
+            {{> field label="Прізвище" name ="firstname"}}
+
+        </div>
+
+        <div class="form_double_field">
+            {{> field label="Мобільний телефон" name ="phone"}}
+            {{> field label="Електронна пошта" name ="email"}}
+        </div>
+        <div class="form_field">
+            {{> field label="Коментар" name ="comment"}}
+            <p>Коментар буде передано кур'єру</p>
+        </div>
+        <div class="form_double_field">
+            {{> field label="Списати бонуси" name ="bonus"}}
+            {{> field label="Промо-код" name ="promocode"}}
+        </div>
+        {{> field value=totalPrice name ="totalPrice" disabled = true}}
+        {{> field value=productPrice name ="productPrice" disabled = true}}
+        {{> field value=deliveryPrice name ="deliveryPrice" disabled = true}}
+        {{> field value=amount name ="amount" disabled = true}}
+
+
+        <h2 class="form_title">Всього {{totalPrice}} грн (+{{bonus}} грн бонусів)</h2>
+        <button class="form_button width98">Оформити замовлення</button>
+
+    </form>
+
+    {{/with}}
+</main>

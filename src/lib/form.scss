@@ -32,6 +32,15 @@
       grid-template-columns: 49.5% 49.5%;
            gap: space.space(3);
     }
+
+     &_three_field{
+    display: grid;
+     
+           gap: space.space(3);
+
+     grid-template-columns: 32.65% 32.65% 32.65%;
+    }
+
     &_field{
         display: flex;
         flex-direction: column;

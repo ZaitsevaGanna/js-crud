@@ -1,0 +1,36 @@
+<main class="form">
+    {{#with data}}
+    <form method="POST" action="/purchase-update?id={{id}}">
+        {{>heading title = "Зміна данних"}}
+
+
+
+
+        <div class="form_field">
+            {{> fieldText key="id:" text =id }}
+        </div>
+
+        <div class="form_double_field">
+            {{> field label="Ім'я" name ='firstname' value=firstname}}
+            {{> field label="Прізвище" name ='lastname' value=lastname}}
+
+        </div>
+
+        <div class="form_double_field">
+            {{> field label="Мобільний телефон" name ='phone' value=phone}}
+            {{> field label="Електронна пошта" name ='email' value=email}}
+        </div>
+
+        {{!-- {{> field value=totalPrice name ="totalPrice" disabled = true}}
+        {{> field value=productPrice name ="productPrice" disabled = true}}
+        {{> field value=deliveryPrice name ="deliveryPrice" disabled = true}}
+        {{> field value=amount name ="amount" disabled = true}}
+        {{> field value=bonus name ="bonus" disabled = true}} --}}
+
+
+        <button class="form_button width98">Зберегти зміни</button>
+
+    </form>
+
+    {{/with}}
+</main>

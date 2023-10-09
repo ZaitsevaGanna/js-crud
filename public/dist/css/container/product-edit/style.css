@@ -22,6 +22,11 @@
   grid-template-columns: 49.5% 49.5%;
   gap: 12px;
 }
+.form_three_field {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 32.65% 32.65% 32.65%;
+}
 .form_field {
   display: flex;
   flex-direction: column;
@@ -29,7 +34,7 @@
 }
 .form_label {
   font-size: 14px;
-  color: #7b7979;
+  color: #9b9999;
 }
 .form_input {
   border: 1px solid #ddd;
@@ -62,12 +67,6 @@ h1 {
 p {
   font-size: 12px;
   color: #cccbcb;
-}
-
-.form_three_field {
-  display: grid;
-  gap: 12px;
-  grid-template-columns: 32.65% 32.65% 32.65%;
 }
 
 main {

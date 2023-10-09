@@ -11,21 +11,9 @@ p{
     color:s.color(lightgrey)
 }
 
-.form{
 
-    @extend .form;
-   
-  
-         
-    }
 
-.form_three_field{
-    display: grid;
-     
-           gap: s.space(3);
 
-     grid-template-columns: 32.65% 32.65% 32.65%;
-}
 main{
     display: flex;
     flex-direction: column;
