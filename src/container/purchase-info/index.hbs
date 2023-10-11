@@ -1,0 +1,49 @@
+<main class="form ">
+    <div class="margin0">
+        {{#with data}}
+
+        {{>heading title = "Інформація про замовлення"}}
+
+
+
+        {{> fieldText key="id:" text =id }}
+
+        {{>divider}}
+
+        <div class="form_double_field">
+            {{> fieldText key="Ім' я:" text=firstname}} {{> fieldText key="Прізвище:" text =lastname}}
+        </div>
+
+        <div class="form_double_field">
+            {{> fieldText key="Мобільний телефон:" text =phone}}
+            {{> fieldText key="Електронна пошта:" text =email}}
+        </div>
+
+        {{>divider}}
+        <div class="form_field">
+            {{> fieldText key="Адреса доставки:" text ="м.Харків,вул.Академіка Павлова 134/16"}}
+            {{> fieldText key="Назва товару:" text = title yes=true amount=amount}}
+        </div>
+        {{>divider}}
+
+        <div class="form_double_field">
+            {{> fieldText key="Вартість товарів:" text =productPrice}}
+            {{> fieldText key="Вартість доставки:" text =deliveryPrice}}
+        </div>
+
+        <div class="form_double_field">
+            {{> fieldText key="Сума до сплати:" text =totalPrice}}
+            {{> fieldText key="Нараховані бонуси:" text =bonus}}
+        </div>
+
+        <div class="form_double_field">
+
+            <a class="form_button width98" href="/purchase-update?id={{id}}">Змінити данні</a>
+
+            <a class="form_button width98" href="/purchase-list">Повернутися до списка замовлень</a>
+        </div>
+
+
+        {{/with}}
+    </div>
+</main>

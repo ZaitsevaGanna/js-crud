@@ -1,0 +1,37 @@
+<main class="form">
+    <div class="form_double_field">
+        {{>heading title = 'Список замовлень'}}
+        <a class="form_button" href="/purchase-index">Повернутись до вибору товарів</a>
+    </div>
+    {{#each data}}
+    {{>divider}}
+    <a href="/purchase-info?id={{this.id}}">
+        <div class="list">
+
+            <div class="form_label">id:{{this.id}}</div>
+
+            <div class="vertical">
+                <p class="form_label">Товари</p>
+                <p class="blackfont">{{this.title}}<span>{{this.amount}}шт</span></p>
+            </div>
+
+            <div class="vertical">
+                <p class="form_label">Сума замовлення</p>
+                <p class="blackfont">{{this.price}}</p>
+            </div>
+
+            <div class="vertical">
+                <p class="form_label">Нараховані бонуси</p>
+                <p class="blackfont">{{this.bonus}}</p>
+            </div>
+
+        </div>
+
+    </a>
+
+
+
+    {{/each}}
+
+
+</main>

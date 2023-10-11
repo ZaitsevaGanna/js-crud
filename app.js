@@ -67,5 +67,5 @@ app.use((err, req, res, next) => {
   res.status(err.status || 500)
   res.render('error', { message: err })
 })
-
+// hbs.registerPartials(__dirname + '/views/partials')
 module.exports = app

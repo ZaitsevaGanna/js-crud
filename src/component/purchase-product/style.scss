@@ -1,0 +1,25 @@
+@use "../../lib/service.scss" as s;
+
+.product-card_category{
+padding: s.space(1) s.space(3);
+border-radius: 30px;
+font-size:14px;
+border: 1px solid transparent;
+width: 60%;
+
+}
+
+.product-card_category-1{
+border-color: s.color(primary);
+color:  s.color(primary);
+}
+
+.product-card_category-2{
+border-color:s.color(success);
+color:s.color(success);
+width: 40%;
+
+}
+a{
+   text-align: center;
+}

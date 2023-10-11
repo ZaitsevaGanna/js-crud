@@ -1,0 +1,64 @@
+@use "./var.scss";
+@use "./space.scss";
+@use "./button.scss";
+
+
+.form{
+
+     display: flex;
+    padding: space.space(4);
+    margin:space.space(4);
+    flex-direction: column;
+    gap:space.space(8);
+    border: 1px solid var.color(lightgrey);
+    box-shadow: 2px 2px 2px 2px var.color(lightgrey);
+    border-radius: 3px;
+
+      &_title{
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: space.space(1);
+             
+    }
+
+    &_content{
+        display: grid;
+        gap: space.space(6);
+    }
+
+
+    &_double_field{
+        display: grid;
+      grid-template-columns: 49.5% 49.5%;
+           gap: space.space(3);
+    }
+
+     &_three_field{
+    display: grid;
+     
+           gap: space.space(3);
+
+     grid-template-columns: 32.65% 32.65% 32.65%;
+    }
+
+    &_field{
+        display: flex;
+        flex-direction: column;
+        gap: space.space(2);
+    }
+
+    &_label{
+        font-size: 14px;
+        color: var.color(darkgrey);
+    }
+    
+    &_input{
+        border: 1px solid var.color('light');
+        padding: space.space(2);
+        resize: none;
+    }
+    
+    &_button{
+        @include button.button;
+}
+}

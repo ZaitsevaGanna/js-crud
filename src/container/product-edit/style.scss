@@ -1,0 +1,32 @@
+
+@use "../../lib/service.scss" as s;
+
+h1{
+    color: s.color(primary);
+    padding-left: s.space(4);
+   margin-bottom: s.space(8);
+}
+p{
+    font-size: 12px;
+    color:s.color(lightgrey)
+}
+
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+   gap: s.space(10);
+}
+.user_list{
+    li{
+        padding-left: s.space(2);
+           padding-top: s.space(1);
+              padding-bottom: s.space(1);
+    }
+}
+.button_red{
+    background-color:s.color(danger);
+    text-align: center;
+}

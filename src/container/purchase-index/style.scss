@@ -1,0 +1,11 @@
+@use "../../lib/service.scss" as s;
+
+@use "../../component/purchase-product/style.scss" ;
+
+
+
+h1 {
+    color: s.color(primary);
+    padding-left: s.space(4);
+   margin-bottom: s.space(8);
+}

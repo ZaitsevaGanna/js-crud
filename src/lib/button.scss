@@ -1,0 +1,22 @@
+
+@use "./var.scss";
+@use "./space.scss";
+
+
+@mixin button{
+     border: 1px solid var.color(light);
+        border-radius: space.space(1);
+        padding: space.space(2);
+         background-color: var.color(primary);
+       color: var.color(white);
+      transition: opacity 0.7s;
+      height: space.space(9);
+    cursor: pointer;
+
+    &:hover{
+        opacity: 0.7;
+    }
+    &:active{
+        opacity: 0.3;
+    }
+}
