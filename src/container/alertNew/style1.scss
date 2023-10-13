@@ -1,0 +1,12 @@
+@use "../../lib/service.scss" as s;
+
+.form{
+    background-color: s.color(black);
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form_button{
+    width: 20%;
+    text-align: center;
+    color: s.color(white);
+}

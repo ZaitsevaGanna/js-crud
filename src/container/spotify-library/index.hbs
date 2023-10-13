@@ -1,0 +1,38 @@
+<main class="main">
+    {{#with data}}
+    <div class="main_content">
+        <div class="nav">
+            <div class="title">
+                Моя бібліотека
+            </div>
+            <div>
+                <a href="/spotify-search">
+                    <img src="/svg/find.svg " alt="+">
+                </a>
+
+                <a href="/spotify-choose">
+                    <img src="/svg/add.svg " alt="+">
+                </a>
+            </div>
+        </div>
+        <ul class="bggrey list">
+            {{#each playlists}}
+
+            <li>
+                <a href="#">
+                    <div class="playlist">
+                        <img src="{{image}}" width="100%">
+                        <div class="track_content">
+                            <strong class="playlist_name">{{name}}</strong>
+                            <em class="playlist_count">{{tracks.length}} пісень</em>
+                        </div>
+                    </div>
+
+                </a>
+            </li>
+
+            {{/each}}
+        </ul>
+    </div>
+    {{/with}}
+</main>

@@ -1,0 +1,25 @@
+@use "../../lib/service.scss" as s;
+
+
+@use "../../lib/spotify.scss" as spotify;
+
+.nav-playlist{
+    display: flex;
+  
+justify-content: space-between;
+
+}
+.add_button{
+       align-items: center;
+ 
+    color: s.color(light);
+    font-size: 20px;
+}
+.add_button2{
+     text-align: center;
+     margin: auto 0;
+    color: s.color(light);
+    font-size: 14px;
+}
+
+
