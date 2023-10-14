@@ -6,7 +6,9 @@ $colorMap:(
     lightgrey:#cccbcb,
     danger:red,
       success:green,
-      black:black
+      black:#121212,
+      grey:#282828,
+
 );
 
 @function color ($key){
